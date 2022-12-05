@@ -4,8 +4,12 @@ Subjects:
  -- Add repository, Add file, and push it from the command line
  -- Practice command line
  -- Practice GitHub issue format syntax
-1. HTML + JaveScript
-1. CSS
+1. HTML + CSS
+ -- static html, try: bold, italic, paragraph, head/title, list, numbered list, form
+ -- Add style to <p>
+ -- Add inline style (script tag in header)
+ -- Add external css file
+1. Javascript
 1. Control the HTML elements
 1. Manual testing
 1. Python
