@@ -1,40 +1,41 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int get_card(void);
-int calculate_multilpy_sum(int card);
-// int calculate_non_multiply_sum(int card);
+long f_get_card(void);
+int calculate_multilpy_sum(long card);
+// int calculate_non_multiply_sum(long card);
 
 
 int main(void)
 {
-    int card = get_card();
-    card = (card / 10);
+    long card = f_get_card();
+    card = card / 10;
     int multiply_sum = calculate_multilpy_sum(card);
     printf("%d", multiply_sum);
 }
 
 
-int get_card(void)
+long f_get_card(void)
 {
-    int card;
+    long card;
     do
     {
-        card = get_int("Card Number: ");
+        card = get_long("Card Number: ");
     }
     while (card <0);
     return card;
 }
 
-int calculate_multilpy_sum(int card);
+int calculate_multilpy_sum(long card)
 {
-    int multiply_sum = 0;
+    // get sum of each second digit and mutiply
+    int sum = 0;
     while ((card / 10) > 0)
     {
-        multiply_sum = multiply_sum + ((card % 10) * 2);
+        sum += card % 10;
         card = card / 100;
     }
-    return multiply_sum;
+    return sum * 2;
 }
 
 // int calculate_non_multiply_sum(int card);
