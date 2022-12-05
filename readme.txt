@@ -1,6 +1,6 @@
 Subjects:
 1. Github
- -- Install [Git command](https://git-scm.com/downloads)and [TortoiseGit ](https://tortoisegit.org/)
+ -- Install Git (https://git-scm.com/downloads) and TortoiseGit (https://tortoisegit.org/)
  -- Add repository, Add file, and push it from the command line
  -- Practice command line
  -- Practice GitHub issue format syntax
@@ -12,4 +12,4 @@ Subjects:
 1. Python - run selenium
  
 Resources:
-- GitHub [totorial](https://docs.github.com/en/get-started/quickstart/hello-world)
+- GitHub Totorial (https://docs.github.com/en/get-started/quickstart/hello-world)
