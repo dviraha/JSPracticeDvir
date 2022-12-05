@@ -6,7 +6,7 @@ Subjects:
  -- Practice GitHub issue format syntax
 1. HTML + CSS
  -- static html, try: bold, italic, paragraph, head/title, list, numbered list, form
- -- Add style to <p>
+ -- Add style <p style="...">text</p>
  -- Add inline style (script tag in header)
  -- Add external css file
 1. Javascript
