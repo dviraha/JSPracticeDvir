@@ -1,0 +1,43 @@
+<html>
+<title>Table with style for each column</title>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<p>All formating should be done inside each table element
+Except the global border "style" for table,th,td (border:1px solid black;)</p>
+
+<h2>Header2</h2>
+
+<table style="width:100%;border:1px solid black;">
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+  </tr>
+  <tr>
+    <td><b>bold text</b></td>
+    <td>
+    	<ul>
+  			<li>list item 1</li>
+  			<li>list item 2</li>
+		</ul>
+    </td>
+    <td>Line 1 Col 3</td>
+  </tr>
+  <tr>
+    <td colspan=2>merged column 1,2</td>
+    <td style="text-align:right">align right</td>
+  </tr>
+  <tr>
+    <td style="font-size:200%;">font size 200%</td>
+    <td style="color:green;">text color green</td>
+    <td style="background-color:red;">background reg</td>
+  </tr>
+</table>
+
+</body>
+</html>
