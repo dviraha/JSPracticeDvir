@@ -12,7 +12,6 @@
 <button id="myButton" type="button">Click me!</button>
 <input id="myInput" /> <ul id="myList"></ul>
 <ul id="myList"></ul>
-<!--div id="myDiv" class="activated"></div-->
 <div id="myDiv"></div>
 
 <div class="good"> 
@@ -32,12 +31,12 @@
     console.log(myVar);
 
     let header = document.getElementById('myHeader'); 
-    //header.innerHTML = 'JS is a king';
+    header.innerHTML = 'JS is a king';
 
     const div = document.getElementById('myDiv'); 
-    //div.style.height = '200px'; 
-    //div.style.width = '200px'; 
-    //div.style.backgroundColor = 'green';
+    div.style.height = '200px'; 
+    div.style.width = '200px'; 
+    div.style.backgroundColor = 'red';
     //div.classList.add('activated');
 
     let activated = true;
@@ -45,36 +44,36 @@
     const input = document.getElementById('myInput'); 
     const list = document.getElementById('myList');
     button.addEventListener('click', (event) => { 
-        console.log('click'  + " " + input.value); 
-        //const myListItem = document.createElement('li'); 
-        //myListItem.innerHTML = input.value; 
-        //list.appendChild(myListItem);
-        //if (activated === true) { 
-        //    div.style.backgroundColor = 'yellow'; 
-        //    activated = false; 
-        //} else { 
-        //    div.style.backgroundColor = 'red'; 
-        //    activated = true; 
-        //}
+        console.log('clickssss'  + " " + input.value); 
+        const myListItem = document.createElement('li'); 
+        myListItem.innerHTML = input.value; 
+        list.appendChild(myListItem);
+        if (activated == true) { 
+            div.style.backgroundColor = 'yellow'; 
+            activated = false; 
+        } else { 
+            div.style.backgroundColor = 'red'; 
+            activated = true; 
+        }
     });
 
     // change all found div.rec in good selector
     const divs = document.querySelectorAll('.good div.rec'); 
     for (el of divs) { 
-        el.style.backgroundColor = 'green'; 
+        el.style.backgroundColor = 'blue'; 
         el.style.height = '100px'; 
         el.style.width = '100px'; 
     };
     // change only first found selector
-    //const firstDiv = divs[0]; 
-    //firstDiv.style.backgroundColor = 'red'; 
-    //firstDiv.style.height = '100px'; 
-    //firstDiv.style.width = '100px';
+    const firstDiv = divs[0]; 
+    firstDiv.style.backgroundColor = 'gray'; 
+    firstDiv.style.height = '150px'; 
+    firstDiv.style.width = '150px';
     // this is equal to:
-    //const div2 = document.querySelector('.good div.rec'); 
-    //div2.style.backgroundColor = 'red'; 
-    //div.style.height = '100px'; 
-    //div.style.width = '100px';
+    const div2 = document.querySelector('.good div.rec'); 
+    div2.style.backgroundColor = 'red'; 
+    div.style.height = '100px'; 
+    div.style.width = '100px';
 </script>
 </body>
 </html>
