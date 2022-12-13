@@ -3,15 +3,20 @@
     console.log(a);
    })()
    
-function whoAmI(arg1) {
-    if (arg1 > 0) {
-        console.log('+');
-    } else if (arg1 < 0) {
-        console.log('-');
+function whoAmI(num) {
+    if (typeof num !== 'number') {
+        console.log('n/a');
+        return;
+    }
+    if (num % 2 === 0) {
+        return true;
     } else {
-        console.log('?');
+        return false;
     }
 }
-whoAmI(3);
-whoAmI(-3);
-whoAmI(0);
+let foo = whoAmI(3);
+console.log(foo);
+foo = whoAmI(-4);
+console.log(foo);
+foo = whoAmI('bahah');
+console.log(foo);
