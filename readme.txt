@@ -1,4 +1,4 @@
-Subjects:
+Suybjects:
 1. Github
  -- Install Git (https://git-scm.com/downloads) and TortoiseGit (https://tortoisegit.org/)
  -- Add repository, Add file, and push it from the command line
