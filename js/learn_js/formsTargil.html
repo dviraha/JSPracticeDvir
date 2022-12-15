@@ -20,24 +20,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>form</title>
+    <script defer src="formsTargil.js"></script>
 </head>
-<script defer src="formsTargil.js"></script>
 <body>
-    <form action="/" method="GET">
+    <h1>please fill dvir & 1234 if you want access</h1>
+    <form action="formsTargil.html" method="POST">
         <div>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text">
+            <label for="name"></label>
+            <input id="name" name="name" type="text" placeholder="Username">
+            <label for="password"></label>
+            <input id="password" name="password" type="password" placeholder="Password">
+        <button id="submit" type="submit">Submit</button>
         </div>
-        <div>
-            <label for="password">Password</label>
-            <input id="password" name="password" type="password">
-        </div>
-        <button type="submit">Submit</button>
     </form>
+    <ul id="list"></ul>
 </body>
 </html>
