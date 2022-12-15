@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Suybjects:
+=======
+Subjectts:
+>>>>>>> 4a80f484ce78aae8b32d61f2bfc8edc5928d48eb
 1. Github
  -- Install Git (https://git-scm.com/downloads) and TortoiseGit (https://tortoisegit.org/)
  -- Add repository, Add file, and push it from the command line
