@@ -3,27 +3,26 @@
 <head>
     <title>form</title>
     <script>
+        function funktzia(form) {
         const aName = document.getElementById('name')
-const aPassword = document.getElementById('password')
-const aSubmit = document.getElementById('submit')
-const aList = document.getElementById('list')
-    aSubmit.addEventListener('click', (event) => { 
-        const myListItem = document.createElement('li'); 
-        myListItem.innerHTML = aName.value + " " + aPassword.value;
-        if ((aName.value == 'dvir') && (aPassword.value == '1234')) {
-            myListItem.style.color = "green";
-        } else {
-           myListItem.style.color = "red";
+        const aPassword = document.getElementById('password')
+        const aSubmit = document.getElementById('submit')
+        const aList = document.getElementById('list')
+            const myListItem = document.createElement('li'); 
+            myListItem.innerHTML = aName.value + " " + aPassword.value;
+            if ((aName.value == 'dvir') && (aPassword.value == '1234')) {
+                myListItem.style.color = "green";
+            } else {
+                myListItem.style.color = "red";
+            }
+            aList.appendChild(myListItem);
+            event.preventDefault();
         }
-        aList.appendChild(myListItem);
-        event.preventDefault();
-    })
-
     </script>
 </head>
 <body>
     <h1>please fill dvir & 1234 if you want access</h1>
-    <form action="formsTargil.html" method="POST">
+    <form onsubmit="return funktzia(this)" method="POST">
         <div>
             <label for="name"></label>
             <input id="name" name="name" type="text" placeholder="Username">
