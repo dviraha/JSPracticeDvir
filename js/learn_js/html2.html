@@ -20,15 +20,12 @@
         }
     </script>
 </head>
-<body>
-    <h1>please fill dvir & 1234 if you want access</h1>
-    <form action=formsTargil1.html onsubmit="return funktzia(this)" method="POST">
+<body onload="funktzia(this)">
+    <form action=html1.html method="POST">
         <div>
-            <label for="name"></label>
             <input id="name" name="name" type="text" placeholder="Username">
-            <label for="password"></label>
             <input id="password" name="password" type="password" placeholder="Password">
-        <button id="submit" type="submit">Submit</button>
+            <input id="submit" name="submit" type="submit">
         </div>
     </form>
     <ul id="list"></ul>
